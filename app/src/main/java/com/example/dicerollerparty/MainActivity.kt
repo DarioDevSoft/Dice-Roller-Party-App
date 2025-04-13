@@ -31,7 +31,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             DiceRollerPartyTheme {
-                DiceWithButtonAndImage()
+                DiceWithButtonAndImage(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .wrapContentSize(Alignment.Center)
+                )
             }
         }
     }
